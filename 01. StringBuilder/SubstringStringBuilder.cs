@@ -1,8 +1,7 @@
-﻿using System;
-using System.Text;
-
-namespace Substring
+﻿namespace Substring
 {
+    using System;
+    using System.Text;
     static class SubstringStringBuilder
     {
         static void Main()

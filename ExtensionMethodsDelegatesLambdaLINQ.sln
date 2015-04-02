@@ -13,7 +13,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06. DivisibleBy7And3", "06.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07. Timer", "07. Timer\07. Timer.csproj", "{50BD3E85-C0BA-424C-9246-E396F787BF0F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09. StudentGroups", "09. StudentGroups\09. StudentGroups.csproj", "{255336AB-3050-4713-97EB-28C80746B823}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09. - 19. StudentGroups", "09. - 19. StudentGroups\09. - 19. StudentGroups.csproj", "{255336AB-3050-4713-97EB-28C80746B823}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

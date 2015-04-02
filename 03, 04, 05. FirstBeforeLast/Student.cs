@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace FirstBeforeLast
+﻿namespace FirstBeforeLast
 {
     public struct Student
     {
@@ -27,8 +21,8 @@ namespace FirstBeforeLast
             this.Age = studentAge;
         }
 
-        public string LastName { get; set; }
-        public string FirstName { get; set; }
-        public int Age { get; set; }
+        public string LastName { get; private set; }
+        public string FirstName { get; private set; }
+        public int Age { get; private set; }
     }
 }

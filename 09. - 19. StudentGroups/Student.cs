@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace StudentGroups
+﻿namespace StudentGroups
 {
+    using System;
+    using System.Collections.Generic;
+
     public class Student
     {
         private string firstName;
@@ -16,7 +13,7 @@ namespace StudentGroups
         private List<int> marks;
         private int groupNumber;
 
-        public Student(string firstN, string lastN, string facNum, string telNum, string mail, List<int> marks, int groupNum)
+        public Student(string firstN, string lastN, string facNum, string telNum, string mail, int groupNum, params int[] marks)
         {
             this.FirstName = firstN;
             this.LastName = lastN;
@@ -24,7 +21,7 @@ namespace StudentGroups
             this.Tel = telNum;
             this.Email = mail;
             this.GroupNumber = groupNum;
-            this.Marks = new List<int>();
+            this.Marks = new List<int>(marks);
         }
 
         public string FirstName
@@ -102,7 +99,7 @@ namespace StudentGroups
             get { return this.marks; }
             private set
             {
-                this.marks = new List<int>();
+                this.marks = value;
             }
         }
 
@@ -115,9 +112,12 @@ namespace StudentGroups
                 {
                     throw new ArgumentOutOfRangeException("Group number cannot be unpositive number!");
                 }
-
+                
                 this.groupNumber = value;
             }
         }
+
+        public string DepartmentName { get; set; }
+
     }
 }

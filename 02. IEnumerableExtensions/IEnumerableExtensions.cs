@@ -1,10 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-namespace IEnumerableExtensions
+﻿namespace IEnumerableExtensions
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Text;
+
     static class IEnumerableExtensionsT
     {
         static void Main()
@@ -54,7 +54,7 @@ namespace IEnumerableExtensions
 
         public static T MaxOf<T>(this IEnumerable<T> list) where T : IComparable
         {
-            T max = (dynamic)0;
+            T max = list.ElementAt(0);
             foreach (var item in list)
             {
                 if (max.CompareTo(item) < 0)
@@ -68,7 +68,7 @@ namespace IEnumerableExtensions
 
         public static T MinOf<T>(this IEnumerable<T> list) where T : IComparable
         {
-            T min = (dynamic)0;
+            T min = list.ElementAt(0);
             foreach (var item in list)
             {
                 if (min.CompareTo(item) > 0)

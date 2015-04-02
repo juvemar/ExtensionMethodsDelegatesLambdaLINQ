@@ -1,10 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-namespace FirstBeforeLast
+﻿namespace FirstBeforeLast
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+
     public class FirstBeforeLast
     {
         static void Main()
